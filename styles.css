@@ -1,0 +1,173 @@
+
+.navbar {
+    background-color: #f356aa !important;
+    border-bottom: 3px solid #B30072;
+}
+
+.estilo-infantil {
+    background-color: #FFFC63 !important;
+}
+
+body {
+    background-color: #f9e8b1 !important; /* Um amarelo creme bem suave */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo Geral do Livro */
+.livro-infantil {
+    border: none !important;
+    border-radius: 5px 20px 20px 5px !important; /* Arredonda mais o lado direito */
+    transition: transform 0.3s ease;
+    min-height: 250px;
+    cursor: pointer;
+}
+
+/* Simula a lombada do livro com uma borda esquerda mais escura */
+.livro-infantil::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(0,0,0,0.1); /* Vinco da capa */
+}
+
+/* Efeito ao passar o mouse (Livro abrindo) */
+.livro-infantil:hover {
+    transform: rotateY(-10px) scale(1.05);
+    z-index: 10;
+}
+
+/* Cores das Capas (Tons Pastéis) */
+.capa-amarela { 
+    background-color: #FFDE7D !important; 
+    border-left: 15px solid #F2C94C !important; /* Lombada */
+}
+.capa-azul { 
+    background-color: #A2D2FF !important; 
+    border-left: 15px solid #7BB6ED !important; /* Lombada */
+}
+.capa-rosa { 
+    background-color: #FFC8DD !important; 
+    border-left: 15px solid #FFAFCC !important; /* Lombada */
+}
+
+/* Fonte Infantil nos Cards */
+.livro-infantil h4 {
+    font-family: 'Comic Sans MS', cursive;
+    color: #444;
+}
+
+.section-bio {
+    background-color: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 4px solid #f0f0f0;
+}
+
+.bio-title {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+}
+
+.bio-content p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* --- ESCULTURA DA TELEVISÃO --- */
+
+.tv-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15));
+}
+
+.tv-body {
+    background-color: #A1887F; /* Cor amadeirada infantil */
+    border: 10px solid #5D4037;
+    border-radius: 50px;
+    padding: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.tv-screen {
+    background-color: #000;
+    border: 12px solid #333;
+    border-radius: 30px;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artista-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garante que a imagem apareça inteira na tela da TV */
+    background-color: #1a1a1a;
+}
+
+.tv-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.dial {
+    width: 35px;
+    height: 35px;
+    background-color: #D7CCC8;
+    border: 4px solid #5D4037;
+    border-radius: 50%;
+}
+
+.speaker-grill {
+    width: 80px;
+    height: 15px;
+    background: repeating-linear-gradient(90deg, #5D4037, #5D4037 6px, transparent 6px, transparent 12px);
+}
+
+/* Antena Retrô */
+.tv-antenna {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 80px;
+}
+
+.tv-antenna::before, .tv-antenna::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #5D4037;
+    border-radius: 10px;
+}
+
+.tv-antenna::before { left: 30px; transform: rotate(-30deg); }
+.tv-antenna::after { right: 30px; transform: rotate(30deg); }
+
+/* Pés da TV */
+.tv-stand {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin-top: -10px;
+}
+
+.tv-stand::before, .tv-stand::after {
+    content: "";
+    width: 20px;
+    height: 25px;
+    background-color: #5D4037;
+    border-radius: 0 0 10px 10px;
+}

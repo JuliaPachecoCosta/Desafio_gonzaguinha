@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonzaguinha</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+                                        <!--  Nav bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container" id="Navbar">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-balloon-heart"></i> Gonzaguinha - O Que é ? O Que é ?
+        </a>
+
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+                                        <!-- Carrosel -->
+
+    <div class="container mt-5">
+    <div id="carrossel_estilizado" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner text-center rounded-5 shadow-lg estilo-infantil" style="min-height: 300px">
+            
+            <div class="carousel-item active mt-5">
+                <div class="p-5">
+                    <h2 class="display-5 fw-bold text-warning">Viver!</h2>
+                    <p class="lead">"E não ter a vergonha de ser feliz..."</p>
+                </div>
+            </div>
+
+            <div class="carousel-item mt-5">
+                <div class="p-5">
+                    <h2 class="display-5 fw-bold text-info">Cantar!</h2>
+                    <p class="lead">"A beleza de ser um eterno aprendiz."</p>
+                </div>
+            </div>
+
+            <div class="carousel-item mt-5">
+                <div class="p-5">
+                    <h2 class="display-5 fw-bold text-danger">É Bonita!</h2>
+                    <p class="lead">"Eu sei que a vida devia ser bem melhor e será..."</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel_estilizado" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel_estilizado" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+                                            <!-- Seção das perguntas  -->
+
+<div class="text-center mb-5 px-3 mt-5">
+    <h2 class="display-4 fw-bold text-primary mb-3" style="font-family: 'Comic Sans MS', cursive;">
+        🎒 Biblioteca do Aprendiz
+    </h2>
+    <p class="lead mx-auto text-muted" style="max-width: 700px; font-size: 1.25rem;">
+        Explore os capítulos desta canção eterna. Cada livro abaixo guarda uma pergunta valiosa do 
+        <strong>Gonzaguinha</strong>, convidando você a folhear as rimas e descobrir a beleza de ser um eterno aprendiz.
+    </p>
+    <div class="d-flex justify-content-center">
+        <hr class="border-primary border-3 opacity-75 w-25">
+    </div>
+</div>
+
+    <section class="container mt-5 mb-5">
+    <div class="row g-4 justify-content-center">
+        
+        <div class="col-md-4">
+            <div class="card h-100 livro-infantil capa-amarela shadow-lg">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+                    <span class="badge rounded-pill bg-white text-dark mb-3">Capítulo 1</span>
+                    <h4 class="fw-bold mb-3">A Vida</h4>
+                    <p class="card-text italic">"E a vida?, <br> E a vida, o que é? Diga lá, meu irmão"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 livro-infantil capa-azul shadow-lg">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+                    <span class="badge rounded-pill bg-white text-dark mb-3">Capítulo 2</span>
+                    <h4 class="fw-bold mb-3">A Ilusão</h4>
+                    <p class="card-text italic mg-">"Ela é a batida de um coração? <br> Ela é uma doce ilusão? Ê-ô"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 livro-infantil capa-rosa shadow-lg">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+                    <span class="badge rounded-pill bg-white text-dark mb-3">Capítulo 3</span>
+                    <h4 class="fw-bold mb-3">Comparações</h4>
+                    <p class="card-text italic">"Mas e a vida? <br>
+                        Ela é maravida ou é sofrimento?<br>
+                         Ela é alegria ou lamento? <br>
+                         O que é, o que é, meu irmão?"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                                            <!-- Sobre o artista -->
+
+<section class="container my-5 section-bio shadow-sm">
+    <div class="row align-items-center g-0">
+        
+        <!-- Coluna da Televisão Retrô -->
+        <div class="col-lg-6 d-flex justify-content-center p-4">
+            <div class="tv-wrapper">
+                <div class="tv-antenna"></div>
+                <div class="tv-body">
+                    <div class="tv-screen">
+                        <!-- Imagem do Artista -->
+                        <img src="Gonzaguinha.jpg" 
+                             alt="Gonzaguinha Sorrindo" 
+                             class="artista-img">
+                    </div>
+                    <div class="tv-controls">
+                        <div class="dial"></div>
+                        <div class="speaker-grill"></div>
+                        <div class="dial"></div>
+                    </div>
+                </div>
+                <div class="tv-stand"></div>
+            </div>
+        </div>
+
+        <!-- Coluna da Biografia Texto -->
+        <div class="col-lg-6 p-4 ps-lg-5">
+            <span class="badge rounded-pill bg-warning text-dark mb-3">Conheça o Artista</span>
+            <h2 class="display-5 fw-bold text-primary mb-4 bio-title">Luiz Gonzaga Jr.</h2>
+            
+            <article class="bio-content">
+                <p class="lead fw-normal">
+                    Conhecido carinhosamente como <strong>Gonzaguinha</strong>, ele foi um dos maiores poetas da nossa música.
+                </p>
+                <p>
+                    Filho do Rei do Baião, ele aprendeu desde cedo que a vida é feita de rimas e coragem. Suas canções são como abraços que nos ensinam a não ter vergonha de ser feliz.
+                </p>
+                <p>
+                    Com um sorriso largo e um violão na mão, ele se tornou o nosso <em>eterno aprendiz</em>, deixando um legado de amor e esperança para todas as gerações.
+                </p>
+            </article>
+
+            <div class="mt-4">
+                <a href="#" class="btn btn-primary btn-lg rounded-pill px-5 shadow">Ler mais histórias</a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+                                                <!--  Footer -->
+
+  <footer class="text-white border-top border-5 border-warning py-4 mt-5 position-relative" 
+        style="background-color: #1a1d23; border-radius: 100% 100% 0 0 / 20px 20px 0 0; box-shadow: 0 -10px 20px rgba(0,0,0,0.3);">
+    
+    <div class="position-absolute top-0 start-50 translate-middle bg-primary rounded-circle d-flex align-items-center justify-content-center shadow-lg" style="width: 50px; height: 50px; margin-top: -5px; border: 3px solid #1a1d23;">
+        <i class="bi bi-moon-stars-fill text-warning fs-4"></i>
+    </div>
+
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center mt-3 mt-md-0">
+        
+        <div class="mb-3 mb-md-0">
+            <span class="h5 fw-bold mb-0" style="font-family: 'Comic Sans MS', cursive; cursor: default;">
+                ✨ <span style="color: #00ffcc;">É a vida,</span> 
+                <span style="color: #ff99cc;">é bonita</span> e 
+                <span style="color: #ffcc00;">é bonita</span> 🌈
+            </span>
+        </div>
+
+        <div class="d-flex gap-3 justify-content-center">
+            <a href="#Navbar" class="btn btn-sm btn-info text-white rounded-pill fw-bold px-4 shadow hover-lift">
+                <i class="bi bi-arrows-expand-vertical me-1"></i> Carrosel
+            </a>
+            
+            <a href="#carrossel_estilizado" class="btn btn-sm btn-warning text-dark rounded-pill fw-bold px-4 shadow hover-lift">
+                <i class="bi bi-book" me-1"></i> Livrinhos
+            </a>
+
+            <a href="#artista" class="btn btn-sm btn-danger text-white rounded-pill fw-bold px-4 shadow hover-lift">
+                <i class="bi bi-person-fill me-1"></i> Artista
+            </a>
+        </div>
+
+        <div class="text-light opacity-75 small mt-3 mt-md-0">
+            &copy; 2026  <br>
+            <span style="font-size: 0.7rem;">Eterno Aprendiz</span>
+        </div>
+    </div>
+</footer>
+
+
+</html>
