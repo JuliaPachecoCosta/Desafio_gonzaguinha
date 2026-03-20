@@ -1,4 +1,4 @@
-# desafio-gonzaguinha
+# desafio_gonzaguinha
 
 ## 💻 Sobre o Projeto
 
